@@ -37,8 +37,29 @@ $input = filter_input_array(INPUT_POST, $args);
         $valid->check($input);
     
         if(empty($valid->errors)){
-            $message = "<div class=\"message-success\">Your form has been submitted!</div>";
-            header('Location: thanks.php');
+
+          require '../vendor/autoload.php';
+          require '../../config.php';
+          //use Mailgun\Mailgun;//
+
+          $mgClient = new Mailgun\Mailgun(MG_KEY);
+          $domain = MG_DOMAIN;
+          
+          $result = $mgClient->sendMessage(
+            $domain, 
+          [  
+          'from'=>"Mailgun Sandbox <postmaster@{$domain}>",
+          'to'=>'Clovis Bordeaux <clovisbordeaux@gmail.com>',
+          'subject'=>$input["subject"],
+          'html'=>"<b>Name</b>: {$input['name']}<br><br>" .
+            "<b>Email</b>: {$input['email']}<br><br>" .
+            "<b>Message</b><br>{$input['message']}"
+          ]
+        );
+       
+
+          $message = "<div class=\"message-success\">Your form has been submitted!</div>";
+           header('Location: thanks.php');
         }else{
             $message = "<div class=\"message-error\">Your form has errors!</div>";
         }
