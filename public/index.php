@@ -1,27 +1,13 @@
 <?php
-$content =<<<EOT
+$content = <<<EOT
 
-
-       
-       <head>
+      <head>
             <meta charset="UTF-8">
             <title>Home</title>
             <meta name="viewport" content="width=device-with, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
-         </head>
-    <body>
-            <header>
-                <span class="logo">My WebSite</span>
-                <a id="toggleMenu">Menu<a></a>
-                    <nav>
-                      <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="resume.php">Resume</a></li>
-                        <li><a href="contact.php">Contact</a></li>
-                      </ul>
-                    </nav>
-            </header>
-        <main>
+      </head>
+        
         <h1>Hello, I'm Clovis Bordeaux</h1>
        
         

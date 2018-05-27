@@ -1,3 +1,4 @@
 # cabordeaux.github.io
-My Github Pages Site
+Example.com site
+
 

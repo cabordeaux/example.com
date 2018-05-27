@@ -58,7 +58,7 @@ $input = filter_input_array(INPUT_POST, $args);
         );
        
 
-          $message = "<div class=\"message-success\">Your form has been submitted!</div>";
+          //$message = "<div class=\"message-success\">Your form has been submitted!</div>";
            header('Location: thanks.php');
         }else{
             $message = "<div class=\"message-error\">Your form has errors!</div>";
@@ -68,45 +68,57 @@ $input = filter_input_array(INPUT_POST, $args);
 
     $message = (!empty($message)?$message:null); 
 
+    $pageTitle = "Contact - Clovis Bordeaux";
+    $description = "Hello, send me a note.";
 
-    $content = <<<EOT
-    <main>
-       
-      <h1>Contact Clovis Bordeaux</h1>
+
+
+$content = <<<EOT
+  <main>
       
-      {$message}
+    <h1>Contact Clovis Bordeaux</h1>
+    
+    {$message}
 
-      <form action="contact.php" method="POST">
-        
+    <form action="contact.php" method="POST">
+      
+      <input 
+        type="hidden" 
+        name="subject" 
+        value="New submission!">
+      
+      <div>
+        <label for="name">Name</label>
         <input 
-          type="hidden" 
-          name="subject" 
-          value="New submission!">
-        
+          id="name" 
+          type="text" 
+          name="name" 
+          value="{$valid->userInput('name')}">
+
+        <div class="message-error">
+          {$valid->error('name')}
+          </div>
+        </div>   
+
         <div>
-          <label for="name">Name</label>
-          <input id="name" 
-                  type="text" 
-                  name="name" 
-                  value="{$valid->userInput('name')}">
+          <label for="email">Email</label>
+          <input 
+            id="email" 
+            type="text" 
+            name="email" 
+            value="{$valid->userInput('email')}">
 
           <div class="text-error">
-            {$valid->error('name')}
-          </div>
-          </div>
-
-          <div>
-          <label for="email">Email</label>
-          <input id="email" type="text" name="email" value="{$valid->userInput('email')}">
-          <div class="text-error">{$valid->error('email')}</div>
-        </div>
+          {$valid->error('email')}</div>
+         </div>
 
         <div>
           <label for="message">Message</label>
+
           <textarea id="message" name="message">{$valid->userInput('message')}
             </textarea>
 
-          <div class="text-error">
+          <div class="message-error">
             {$valid->error('message')}
             </div>
             </div>
