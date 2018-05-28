@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title><?php echo $pageTitle; ?></title>
-    <meta name="description" content="<?php echo $description; ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/main.css" type="text/css">
+      <meta charset="UTF-8">
+      <title>About Jason Snider</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/dist/main.css">
   </head>
   <body>
-    <header>
-      <span class="logo">My Website</span>
-      <a id="toggleMenu">Menu</a>
-      <nav>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="resume.php">Resume</a></li>
-          <li><a href="contact.php">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <?php echo $content; ?>
+    <div id="Wrapper">
+        <nav class="top-nav">
+            <a href="index.html" class="pull-left" href="/">Site Logo</a>
+            <ul role="navigation">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="resume.php">Resume</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
 
-    <script>
+        <div class="row">
+            <div id="Content">
+                <?php echo $content; ?>
+            </div>
+            <div id="Sidebar">
+              <div id="AboutMe">
+                <div class="header">Hello, I am YOUR-NAME</div>
+                <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm" alt="My Avatar" class="img-circle">
+              </div>
+            </div>
+        </div>
 
-        var toggleMenu = document.getElementById('toggleMenu');
-        var nav = document.querySelector('nav');
-        toggleMenu.addEventListener(
-          'click',
-          function(){
-            if(nav.style.display=='block'){
-              nav.style.display='none';
-            }else{
-              nav.style.display='block';
-            }
-          }
-        );
-  
-      </script>
+        <div id="Footer" class="clearfix">
+            <small>&copy; 2017 - MyAwesomeSite.com</small>
+            <ul role="navigation">
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+
   </body>
+
 </html>

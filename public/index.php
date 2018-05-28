@@ -14,7 +14,7 @@ $content = <<<EOT
        
         
        <img class="avatar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" 
-              alt='My Avatar'> <p>  Clovis Bordeaux is a full stack responsive interactive application developer, servant/leader, and data enthusiast with a drive for solving complex problems in educational and enterprise settings and explaining formal concepts using easy-to-understand language while advancing innovative technology solutions. 
+              alt='My Avatar'> <p>  Clovis Bordeaux is a full stack responsive interactive application developer, servant/leader, and Solildity enthusiast with a drive for solving complex problems in educational and enterprise settings while advancing knowledge and innovative technology solutions. 
                 </p>
 EOT;
 
