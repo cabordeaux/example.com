@@ -1,7 +1,7 @@
 
 <?php
 
-$pageTitle = "Thank You";
+$pageTitle = "My Resume";
 $description = "This is my resume";
 $content = <<<EOT
 <main>
@@ -16,98 +16,97 @@ $content = <<<EOT
   </div>
   
   <section>
-    <h2>A+ Certified MIN Alchemist</h2>
+    <h2>Web Developer</h2>
     <p>
-    Good Morning.  "I'm Clovis Bordeaux.  I do technical support services related to computer networks and software, and networks.
-
-    An  innovative technology champion consistently developing solutions in educational and business settings.  An avid hands-on teacher/learner comfortable in networking and software environments, with experiences in building responsive and interactive websites and applications.  
-    
-    I adapt easily to challenging situations. I enjoy learning new technologies and devising strategies to solve problems. I have found that paying close attention to detail produces high-quality work the first time, and that keeps me from having to do it again. I try to understand your needs, goals, and frustrations  to engineer a path forward.I have the communication skills to explain complex situations or processes and make them simple to understand..
-    
-    I help companies accomplish their goals faster and cheaper than they ever thought possible.  I make sure technology works for you instead of against you."
-
-
+    A servant/leader proponent of innovative technology solutions in educational and enterprise settings.  An avid hands-on teacher/learner comfortable in networking and software environments, with experiences in building responsive, interactive applications, who adapts easily to challenging situations, with a natural talent for explaining complex concepts using easy-to-understand language.  Experienced in Express, Javascript, Angular and Ionic environments.
     </p>
-    <ul>
-      <li>
-        digital music and audio production engineer 
-        HTML and CSS  
-        A+ certification
-        Build LAMP (Linux, Apache, MySql and PHP) stack configuration from scratch 
-        Build MEAN (MongoDB, Express.js, Angular, and NodeJs).
-        Refurbishing and recycling of computers
-        Design and implementation of LAN
-        Build server configuration from scratch
-      </li>
-    </ul>
 
     <section>
       <h3>Core Competencies</h3>
-
       <ul>
-        <li>Network Design</li>
-        <li>Digital Audio/Graphic Design</li>
-        <li>A Natural Problem Solver</li>
-      </ul>
-  
-      <ul>
-        <li>Hybrid Mobile Development</li>
-        <li>Ability to Delegate Tasks</li>
-        <li>Strong Analytical Skills</li>
+        <li>
+          Building Linux Systems including server, development and production environments
+        </li>
+        <li>
+          Responsive interactive applications development
+        </li>
+        <li>
+          Strong analytical and problem-solving skills
+        </li>
+        <li>
+          Network design
       </ul>
     </section>
-
+    
     <section>
       <h3>Techincal Proficiencies</h3>
   
       <ul>
-        <li>Platforms: Windows, Mac, LAMP</li>
-        <li>Database: MySQL</li>
-        <li>Tools: VS Code, SSH, Git, Code Pen</li>
-        <li>Languages: HTML, CSS, JavaScript, Python, Bash, SQL</li>
+        <li>Platforms: Linux, Windows, Mac, LAMP, MEAN, NodeJS, Angular, Ionic</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Tools: Command-line, VS Code, SSH, Git, Gulp, Bootstrap, Gulp</li>
+        <li>Languages: HTML, CSS, JavaScript, ES6, PHP, Python, Bash, SQL, Angular</li>
       </ul>
     </section>
   </section>
 
   <section>
-    <h2>Professional Experience</h2>
+    <h2>EDUCATION</h2>
 
-    <h3>Sonic Lights Music Studio, Chicago, IL 2010-Present</h3>
+    <h3>Continuing Education, Microtrain Technologies, Chicago, IL 2018-Present</h3>
     <p>
-      Leads the development of special projects and LogicX, ProTools,  
-      and social media systems.
+      
     </p>
     <ul>
-      <li>Full stack LAMP</li>
-      <li>Full stack JavaScript with a focus on MEAN</li>
+      <li>Agile full Stack web and hybrid mobile applications development</li>
+      <li>Created static pages with menus and external links</li>
       <li>Hybrid Mobile Development with Ionic</li>
-      <li>Designs and implements development processes</li>
-      <li>Conceives and implements development strategies</li>
+      <li>Developed blog platform with user log-in privledges</li>
+      <li>Ported applications to interactive webpages</li>
+      <li>Set up email server with Domain Keys Infrastructure Management</li>
+      <li>Designed animation sequences and computation algorithms</li>
+      <li>Optimized UX/UI for useability and appearance</li>
+      <li>Built API</li>
+      <li>Integrated server-side languages</li>
+    </ul>
+    <h3>Certifications and Degree Programs</h3>
+    <ul>
+      <li>Comp TIA A+ Certification, 2018</li>
+      <li>MBA, Roosevelt University, 1985</li>
+      <li>B.Ed. Webster University, 1972</li>
     </ul>
   </section>
 
   <section>
-    <h3>LexTech Global Services, Lisle, IL 2006-2007</h3>
+    <h2>PROFESSIONAL EXPERIENCE</h2>
+    <h3>Intern</h3>
+    <h3>FreeGeek NFP, Chicago, IL 2018</h3>
     <p>
-      Developed a pilot system that pioneered the "Health 2.0" arena.
+     A computer recycling and warehousing facility
     </p>
     <ul>
-      <li>Project for Active Care Network.</li>
-      <li>Responsible for writing and testing code.</li>
-      <li>Implemented complex event processing.</li>
-      <li>Implemented mapping and geo data based functionality.</li>
-      <li>HTML, CSS, JavaScript, SQL, CakePHP</li>
+      <li>Installed and tested Linux systems on desktops and servers</li>
+      <li>Taught classes in HTML</li>
+      <li>Inspected builds for quality assurance</li>
+      <li>Implemented OSI Layers Model and IEEE Standards</li>
+      <li>Transposed standard notatin to binary and IPv6 notation as needed</li>
     </ul>
   </section>
 
   <section>
-    <h3>Freelance, Columbus, OH 2003-2006</h3>
+    <h3>Professional Service Technician</h3>
+    <h3>The Handy Company, Chicago, 2015-2017</h3>
     <p>
-        Built several websites and applications using PHP, MySQL, HTML, CSS and 
-        JavaScript.
+    A Provider of Installation Services for Homes and Businesses
     </p>
+    <ul>
+      <li>Installed Smart TV's with wall mounts and in-wall wiring</li>
+      <li>Set up wireless communications devices</li>
+      <li>Activated purchase plans, devices, and wireless access points</li>
+      <li>Installed security systems and cameras</li>
+    </ul>
   </section>
-
+  
 </main>
 EOT;
 
